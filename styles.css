@@ -1,0 +1,119 @@
+:root {
+    --background-color-blue: #051C48;
+    --background-color-orange: #FE6B0C;
+    --color-font-white: #FFFFFF;
+    --font-size-23: 23px;
+
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px
+}
+
+* {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.inactive {
+    display: none
+}
+
+.section-home {
+    min-height: 90vh;
+    background: linear-gradient(rgb(5 28 72 / 55%), rgb(5 28 72 / 55%)), url(../Imagenes/reunion.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.container-text--home {
+    position: ABSOLUTE;
+    z-index: 2;
+    left: 66px;
+    top: 352px;
+}
+
+@media (max-width: 1130px) {
+    .container-text--home p {
+        font-size: 2.313rem !important;
+        inline-size: 39rem !important;
+    }
+    .container-text--home span {
+        font-size: 30px;
+
+    }
+    
+}
+
+.container-text--home p {
+    font-size: 49px;
+    color: var(--color-font-white);
+    inline-size: 832px;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    line-height: 115.5%;
+}
+
+.container-text--home span {
+    font-size: 33px;
+    font-weight: 400;
+    color: var(--background-color-orange);
+}
+
+@media(max-width:795px) {
+    .container-text--home p {
+        font-size: 2rem !important;
+        inline-size: 34rem !important;
+    }
+}
+
+
+@media(max-width:610px) {
+    .container-text--home p {
+        font-size: 2rem !important;
+        inline-size: 22rem !important;
+    }
+
+    .container-text--home span {
+        font-size: 22px;
+    }
+    .container-text--home {
+        top: 285px;
+    }
+}
+@media(max-width:513px) {
+    .section-home {
+        min-height: 94vh;
+    }
+}
+@media(max-width:482px) {
+    .container-text--home p {
+        font-size: 1rem ;
+        inline-size: 17rem;
+    }
+    .container-text--home {
+        left: 41px;
+        top: 290px;
+    }
+}
+@media(max-width:441px) {
+    .section-home {
+        min-height: 92vh;
+    }
+    .container-text--home p {
+        font-size: 1rem ;
+        inline-size: 12rem ;
+    }
+    .container-text--home {
+        left: 15px;
+    }
+}
+@media(max-height:673px) {
+    .container-text--home {
+        top: 273px; 
+    }
+}

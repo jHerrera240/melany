@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylefooter.css">
+    <link rel="stylesheet" href="../styleNav.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-left">
+            <div class="img-header">
+                <img src="../Imagenes/logo1.png" alt="">
+            </div>
+        </div>
+        <div class="navbar-right ref-header inactive-menu-desktop">
+            <a href="./index.html">Inicio</a>
+            <a href="./Conferencias/index.html">Conferencias</a>
+            <a href="./Tematica/index.html">Temáticas</a>
+            <button id="button" onclick="redirect()">Inscríbete</button>
+        </div>
+        <div class="image-menu-mobile inactive">
+            <img onclick="(e) =>toggleDesktopMenu(e)" src="../Imagenes/menu.png" alt="">
+        </div>
+        <div id="menu-mobile" class="desktop-menu inactive">
+            <a href="./index.html">Inicio</a>
+            <a href="./Conferencias/index.html">Conferencias</a>
+            <a href="./Tematica/index.html">Temáticas</a>
+            <button onclick="redirect()">Inscríbete</button>
+        </div>
+    </nav>
+    <section class="section-home">
+        <div class="container-text--home">
+            <p>
+                1er Congreso Internacional de Comunicaciones Estratégicas para
+                la Seguridad Multidimensional en Colombia
+            </p>
+            <span>Septiembre 2023</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foter-container-left">
+            <ul>
+                <li>
+                    <p>DIRECCIÓN</p>
+                    <p>Cra. 11#102-50, Bogotá D.C</p>
+                </li>
+                <li>
+                    <p>TÉLEFONO</p>
+                    <p>+57 310 273 9049</p>
+                </li>
+                <li>
+                    <p>CORREO</p>
+                    <p>congresocomuni@esdeg.edu.co</p>
+                </li>
+            </ul>
+        </div>
+        <div class="foter-container-right footer-tablet">
+            <p style="font-size: 15px;">COLABORACIÓN ACADÉMICA ENTRE:</p>
+            <ul>
+                <li class="navbar-shopping-cart--footer">
+                    <div class="images-footer">
+                        <img src="../Imagenes/logo2.png" alt="" width="189px" height="62px">
+                        <img src="../Imagenes/logo3.png" alt="" width="189px" height="62px" style="margin-right: 94px">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+    <script src="./scriptNav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+:root {
+    --background-color-blue: #051C48;
+    --background-color-orange: #FE6B0C;
+    --color-font-white: #FFFFFF;
+    --font-size-23: 23px;
+    --font-primary: #2E323B;
+
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px
+}
+
+* {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.inactive {
+    display: none
+}
+
+.section-conferencia {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: #EEF4FF;
+    
+    height: 100%;
+    min-height: 851px;
+
+}
+
+.section-conferencia h1 {
+    color: var(--background-color-blue);
+    font-size: 47px;
+    font-weight: 700;
+    margin: 83px 0 27px 0;
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+        display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    min-height: 386px;
+    margin: 20px;
+    min-width: 331px;
+    background-color: var(--color-font-white);
+    margin-bottom: 96px;
+
+    border: 2px solid #3E3FD8;
+    box-shadow: 4px 20px 100px rgba(62, 63, 216, 0.25);
+    border-radius: 20px;
+
+}
+
+.image-card {
+    object-fit: cover;
+    border-radius: 22px;
+    max-width: 306px;
+    max-height: 206px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 17px;
+    margin-top: 6px;
+}
+
+.card-mask {
+    display: flex;
+}
+
+.card-mask p {
+    font-size: 17px;
+    color: #61646B;
+    margin: 5px;
+    inline-size: 125px;
+    font-weight: 400;
+}
+
+.card-mask img {
+    max-width: 29px;
+    max-height: 29px;
+}
+
+.card-mask div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.p-card--information {
+    font-size: var(--font-size-23);
+    color: var(--font-primary);
+    margin-top: 12px;
+    inline-size: 281px;
+    font-weight: 600;
+    text-align: left;
+}
+
+@media(max-width:1200px) {
+    .card {
+        min-width: 310px;
+        margin: 20px 20px 96px 0;
+    }
+
+}
+
+@media(max-width:1091px) {
+    .card {
+        min-width: 300px;
+        margin: 20px 9px 96px 0;
+    }
+
+}
+@media(max-width:1028px) {
+    .p-card--information {
+        inline-size: 235px;
+    }
+    .card-mask p {
+        inline-size: 112px;
+    }
+    .image-card {
+        max-width: 287px;
+        max-height: 194px;
+    }
+    .card {
+        min-width: 287px;
+    }
+    
+}
+@media(max-width:987px) {
+    .section-conferencia h1 {
+        font-size: 38px;
+    }
+    .cards-container {
+        flex-direction: column;
+    }
+}
